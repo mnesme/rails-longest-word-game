@@ -1,0 +1,10 @@
+
+
+<%= @grid %>
+
+<form action="/score" method="get">
+  <input type="hidden" name="start_time" value="<%= Time.now.to_i %>">
+  <input type="hidden" name="grid" value="<%= @grid.join %>">
+  <input type="text" name="word" placeholder="What is your word?">
+  <input type="submit">
+</form>
